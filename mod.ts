@@ -2,10 +2,10 @@
  * Returns an object with no empty fields. Works with nested objects as well.
  * 
  * @param removeEmptyArraysAndObjects If `true` then arrays with no items and 
- * objects with no keys will be removed as well.
+ * objects with no keys will be removed as well. Default is `true`.
  * 
  * @param createNewObject If `true` then a newly created object will be returned, 
- * otherwise the object argument will be updated in place.
+ * otherwise the object argument will be updated in place. Default is `true`.
  */
 export function removeObjectEmptyFields(object?: Record<string, any>, removeEmptyArraysAndObjects = true, createNewObject = true) {
   if(!object || typeof object !== 'object') {
